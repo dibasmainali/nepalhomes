@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="bg-white px-6 py-4 shadow">
+      <div class="mx-8 lg-text-sm">
+        <div class="flex justify-between items-center">
+          <div class="text-3xl font-bold">
+            <i class="fa-duotone fa-solid fa-house"></i> Nepal<span
+              class="text-blue-500 text-3xl font-bold"
+              >Homes</span
+            ><span>.com</span>
+          </div>
+          <div class="md:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="hidden md:flex items-center space-x-4">
+            <select class="px-4 py-2 text-gray-600 hover:text-blue-600">
+              <option>Properties</option>
+            </select>
+            <select class="px-4 py-2 text-gray-600 hover:text-blue-600">
+              <option>Auction</option>
+            </select>
+            <a href="#" class="px-4 py-2 text-gray-600 hover:text-blue-600"
+              >News</a
+            >
+            <a href="#" class="px-4 py-2 text-gray-600 hover:text-blue-600"
+              >Agencies</a
+            >
+            <select class="px-4 py-2 text-gray-600 hover:text-blue-600">
+              <option>Tools</option>
+            </select>
+            <button
+              class="px-6 py-2 bg-white text-black rounded border hover:bg-blue-600"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+        <div class="md:hidden hidden" id="mobile-menu">
+          <select class="px-4 py-2 w-full text-gray-600">
+            <option>Properties</option>
+          </select>
+          <select class="px-4 py-2 w-full text-gray-600">
+            <option>Auction</option>
+          </select>
+          <a href="#" class="block px-4 py-2 text-gray-600 hover:text-blue-600"
+            >News</a
+          >
+          <a href="#" class="block px-4 py-2 text-gray-600 hover:text-blue-600"
+            >Agencies</a
+          >
+          <select class="px-4 py-2 w-full text-gray-600">
+            <option>Tools</option>
+          </select>
+          <button
+            class="px-6 py-2 w-full bg-white text-black rounded border hover:bg-blue-600"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="relative h-full">
+      <div
+        class="relative bg-cover bg-center py-12 px-6 hero-section"
+        style="
+          background-image: url('https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2Ffiles%2F154CB286FA33469-Web-banner%20(1).png&w=1920&q=75');
+          height: 70vh;
+        "
+      >
+        <div
+          class="absolute bottom-0 left-48 mb-8 flex justify-between items-center max-w-7xl mx-auto"
+        >
+          <form class="flex space-x-4">
+            <div class="px-4 py-2 w-full bg-white flex rounded-full">
+              <div class="w-40 flex">
+                <input
+                  type="text"
+                  placeholder="Enter City, Location"
+                  class="w-full px-2 py-1 rounded-l-full"
+                />
+              </div>
+              <select class="px-4 py-2 bg-white rounded shadow">
+                <option>Property Type</option>
+              </select>
+              <select class="px-4 py-2 bg-white rounded shadow">
+                <option>Budget</option>
+              </select>
+              <button
+                type="submit"
+                class="bg-blue-600 text-white px-6 py-2 rounded-r-full hover:bg-blue-700"
+              >
+                Search
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h2 class="ml-5 text-2xl "><b>Popular Categories</b></h2>
+      <div class="flex gap-2 justify-center">
+        <div class="box-content h-32 w-32 p-4 border-2 rounded-md">
+          <div class="rounded-sm bg-white">
+            <img
+              class="ml-4"
+              src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2Famenities%2FB6EFCBC074C7AE0-home.png&w=96&q=75"
+              alt="nepalhomes"
+            />
+          </div>
+          <div class="text-center">House</div>
+          <div class="text-center">1702</div>
+        </div>
+        <div class="box-content h-32 w-32 p-4 border-2 rounded-md">
+          <img
+            class="ml-4"
+            src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2Famenities%2FE274C43C8AA9CB3-land.png&w=96&q=75"
+            alt="nepalhomes"
+          />
+          <div class="text-center">Land</div>
+          <div class="text-center">1724</div>
+        </div>
+        <div class="box-content h-32 w-32 p-4 border-2 rounded-md">
+          <img
+            class="ml-5"
+            src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2Famenities%2FE0C9CF58A0120C5-flat.png&w=96&q=75"
+            alt="nepalhomes"
+          />
+          <div class="text-center">Flats</div>
+          <div class="text-center">170</div>
+        </div>
+        <div class="box-content h-32 w-32 p-4 border-2 rounded-md">
+          <img
+            class="ml-5"
+            src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2Famenities%2FA205781608B5D5D-office.png&w=96&q=75"
+            alt="nepalhomes"
+          />
+          <div class="text-center">Office Spaces</div>
+          <div class="text-center">178</div>
+        </div>
+        <div class="box-content h-32 w-32 p-4 border-2 rounded-md">
+          <img
+            class="ml-5"
+            src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2Famenities%2FD7E2E7E2290AC61-shop.png&w=96&q=75"
+            alt="nepalhomes"
+          />
+          <div class="text-center">Shop Spaces</div>
+          <div class="text-center">1456</div>
+        </div>
+        <div class="box-content h-32 w-32 p-4 border-2 rounded-md">
+          <img
+            class="ml-5"
+            src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2Famenities%2FDFC0E5FA3250C87-apartment-o.png&w=96&q=75"
+            alt="nepalhomes"
+            style="width: 90px"
+          />
+          <div class="text-center">Apartment</div>
+          <div class="text-center">340</div>
+        </div>
+        <div class="box-content h-32 w-32 p-4 border-2 rounded-md">
+          <img
+            class="ml-5"
+            src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2Famenities%2FB6EFCBC074C7AE0-home.png&w=96&q=75"
+            alt="nepalhomes"
+          />
+          <div class="text-center">House</div>
+          <div class="text-center">1702</div>
+        </div>
+      </div>
+      <h2 class="ml-5 text-2xl"><b>Featured Projects</b></h2>
+      <!--Featured Projects Second border starts -->
+      <div class="flex gap-2 ml-5 mr-5">
+        <div class="box-content h-80 w-80 p-4 border-2 rounded-md">
+          <img
+            src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2Fmedia%2FA0D45BBC317118F-Dhapakhel.jpg&w=1920&q=75"
+            alt="nepalhomes"
+            style="width: 500px"
+          />
+          <button
+            class="border-1 mr-3 px-3 rounded-lg bg-blue-200 relative bottom-8 left-[2%]"
+          >
+            Rs.2.5 cr
+          </button>
+          <div>Housing & Apartments</div>
+          <div>Downtown Residency</div>
+          <div>Locations Koteshwar 32</div>
+          <button class="border-1 mr-3 px-3 rounded-lg bg-gray-300">
+            6 Properites
+          </button>
+          <div class="border border-1.5 border-grey-200 mt-4"></div>
+        </div>
+        <div class="box-content h-80 w-80 p-4 border-2 rounded-md">
+          <img
+            src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2Fmedia%2F8591FA076467339-F5-1-1024x576.jpg&w=1920&q=75"
+            alt="nepalhomes"
+          />
+          <button
+            class="border-1 mr-3 px-3 rounded-lg bg-blue-200 relative bottom-8 left-[2%]"
+          >
+            Rs.3.65 Cr - Rs.5 Cr
+          </button>
+          <div>Housing & Apartments</div>
+          <div>Downtown Residency</div>
+          <div>Locations Koteshwar 32</div>
+          <button class="border-1 mr-3 px-3 rounded-lg bg-gray-300">
+            6 Properites
+          </button>
+          <div class="border border-1.5 border-grey-200 mt-4"></div>
+        </div>
+        <div class="box-content h-80 w-80 p-4 border-2 rounded-md">
+          <img
+            src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2Fmedia%2FFDC8FBD482990D1-13.1%20(1)%20(1).jpg&w=1920&q=75"
+            alt="nepalhomes"
+          />
+          <button
+            class="border-1 mr-3 px-3 rounded-lg bg-blue-200 relative bottom-8 left-[2%]"
+          >
+            Prices on Call
+          </button>
+          <div>Housing & Apartments</div>
+          <div>Downtown Residency</div>
+          <div>Locations Koteshwar 32</div>
+          <button class="border-1 mr-3 px-3 rounded-lg bg-gray-300">
+            6 Properites
+          </button>
+          <div class="border border-1.5 border-grey-200 mt-4"></div>
+        </div>
+        <div class="box-content h-80 w-80 p-4 border-2 rounded-md">
+          <img
+            src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2Fmedia%2F0B7678C46B931B0-4%20(1).jpg&w=1920&q=75"
+            alt="nepalhomes"
+          />
+          <button
+            class="border-1 mr-3 px-3 rounded-lg bg-blue-200 relative bottom-8 left-[2%]"
+          >
+            Prices on Call
+          </button>
+          <div>Housing & Apartments</div>
+          <div>Downtown Residency</div>
+          <div>Locations Koteshwar 32</div>
+          <button class="border-1 mr-3 px-3 rounded-lg bg-gray-300">
+            6 Properites
+          </button>
+          <div class="border border-1.5 border-grey-200 mt-4"></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h2 class="ml-5 text-2xl"><b>Premium Properties</b></h2>
+      <div class="flex gap-2 ml-5 mr-5">
+        <div class="box-content h-80 w-80 p-4 border-2 rounded-md">
+          <img
+            src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2Fmedia%2FA0D45BBC317118F-Dhapakhel.jpg&w=1920&q=75"
+            alt="nepalhomes"
+            style="width: 500px"
+          />
+          <button
+            class="border-1 mr-3 px-3 rounded-lg bg-blue-200 relative bottom-8 left-[2%]"
+          >
+            Rs.2.5 cr
+          </button>
+          <div>Housing & Apartments</div>
+          <div>Downtown Residency</div>
+          <div>Locations Koteshwar 32</div>
+          <button class="border-1 mr-3 px-3 rounded-lg bg-gray-300">
+            6 Properites
+          </button>
+          <div class="border border-1.5 border-grey-200 mt-4"></div>
+        </div>
+        <div class="box-content h-80 w-80 p-4 border-2 rounded-md">
+          <img
+            src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2Fmedia%2F8591FA076467339-F5-1-1024x576.jpg&w=1920&q=75"
+            alt="nepalhomes"
+          />
+          <button
+            class="border-1 mr-3 px-3 rounded-lg bg-blue-200 relative bottom-8 left-[2%]"
+          >
+            Rs.3.65 Cr - Rs.5 Cr
+          </button>
+          <div>Housing & Apartments</div>
+          <div>Downtown Residency</div>
+          <div>Locations Koteshwar 32</div>
+          <button class="border-1 mr-3 px-3 rounded-lg bg-gray-300">
+            6 Properites
+          </button>
+          <div class="border border-1.5 border-grey-200 mt-4"></div>
+        </div>
+        <div class="box-content h-80 w-80 p-4 border-2 rounded-md">
+          <img
+            src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2Fmedia%2FFDC8FBD482990D1-13.1%20(1)%20(1).jpg&w=1920&q=75"
+            alt="nepalhomes"
+          />
+          <button
+            class="border-1 mr-3 px-3 rounded-lg bg-blue-200 relative bottom-8 left-[2%]"
+          >
+            Prices on Call
+          </button>
+          <div>Housing & Apartments</div>
+          <div>Downtown Residency</div>
+          <div>Locations Koteshwar 32</div>
+          <button class="border-1 mr-3 px-3 rounded-lg bg-gray-300">
+            6 Properites
+          </button>
+          <div class="border border-1.5 border-grey-200 mt-4"></div>
+        </div>
+        <div class="box-content h-80 w-80 p-4 border-2 rounded-md">
+          <img
+            src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2Fmedia%2F0B7678C46B931B0-4%20(1).jpg&w=1920&q=75"
+            alt="nepalhomes"
+          />
+          <button
+            class="border-1 mr-3 px-3 rounded-lg bg-blue-200 relative bottom-8 left-[2%]"
+          >
+            Prices on Call
+          </button>
+          <div>Housing & Apartments</div>
+          <div>Downtown Residency</div>
+          <div>Locations Koteshwar 32</div>
+          <button class="border-1 mr-3 px-3 rounded-lg bg-gray-300">
+            6 Properites
+          </button>
+          <br />
+          <div class="border border-1.5 border-grey-200 mt-4"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex gap-1 text-center ml-5">
+      <span class="mr-7 text-2xl"
+        ><h2><b>Featured Properties</b></h2></span
+      >
+      <span class="mr-5"
+        ><p>
+          Properties promoted by NH which will display in multiple sites and
+          platforms such as OnlineKhabar, Hamro Patro.
+        </p></span
+      >
+      <div class="float-end">
+        <button
+          class="float-end border-solid border-2 border-sky-300 mr-3 px-6 rounded-sm"
+        >
+          View All
+        </button>
+      </div>
+    </div>
+    <div class="flex gap-2 ml-5 mr-5">
+      <div class="box-content h-80 w-80 p-4 border-2 rounded-md">
+        <img
+          src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2Fmedia%2FA0D45BBC317118F-Dhapakhel.jpg&w=1920&q=75"
+          alt="nepalhomes"
+          style="width: 500px"
+        />
+        <button
+          class="border-1 mr-3 px-3 rounded-lg bg-blue-200 relative bottom-8 left-[2%]"
+        >
+          Rs.2.5 cr
+        </button>
+        <div>Housing & Apartments</div>
+        <div>Downtown Residency</div>
+        <div>Locations Koteshwar 32</div>
+        <button class="border-1 mr-3 px-3 rounded-lg bg-gray-300">
+          6 Properites
+        </button>
+        <div class="border border-1.5 border-grey-200 mt-4"></div>
+      </div>
+      <div class="box-content h-80 w-80 p-4 border-2 rounded-md">
+        <img
+          src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2Fmedia%2F8591FA076467339-F5-1-1024x576.jpg&w=1920&q=75"
+          alt="nepalhomes"
+        />
+        <button
+          class="border-1 mr-3 px-3 rounded-lg bg-blue-200 relative bottom-8 left-[2%]"
+        >
+          Rs.3.65 Cr - Rs.5 Cr
+        </button>
+        <div>Housing & Apartments</div>
+        <div>Downtown Residency</div>
+        <div>Locations Koteshwar 32</div>
+        <button class="border-1 mr-3 px-3 rounded-lg bg-gray-300">
+          6 Properites
+        </button>
+        <div class="border border-1.5 border-grey-200 mt-4"></div>
+      </div>
+      <div class="box-content h-80 w-80 p-4 border-2 rounded-md">
+        <img
+          src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2Fmedia%2FFDC8FBD482990D1-13.1%20(1)%20(1).jpg&w=1920&q=75"
+          alt="nepalhomes"
+        />
+        <button
+          class="border-1 mr-3 px-3 rounded-lg bg-blue-200 relative bottom-8 left-[2%]"
+        >
+          Prices on Call
+        </button>
+        <div>Housing & Apartments</div>
+        <div>Downtown Residency</div>
+        <div>Locations Koteshwar 32</div>
+        <button class="border-1 mr-3 px-3 rounded-lg bg-gray-300">
+          6 Properites
+        </button>
+        <div class="border border-1.5 border-grey-200 mt-4"></div>
+      </div>
+      <div class="box-content h-80 w-80 p-4 border-2 rounded-md">
+        <img
+          src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2Fmedia%2F0B7678C46B931B0-4%20(1).jpg&w=1920&q=75"
+          alt="nepalhomes"
+        />
+        <button
+          class="border-1 mr-3 px-3 rounded-lg bg-blue-200 relative bottom-8 left-[2%]"
+        >
+          Prices on Call
+        </button>
+        <div>Housing & Apartments</div>
+        <div>Downtown Residency</div>
+        <div>Locations Koteshwar 32</div>
+        <button class="border-1 mr-3 px-3 rounded-lg bg-gray-300">
+          6 Properites
+        </button>
+        <br />
+        <div class="border border-1.5 border-grey-200 mt-4"></div>
+      </div>
+    </div>
+    <img src="./nepalhome.png" alt="nepalhome" /><br />
+
+    <div class="flex gap-5">
+      <h2 class="ml-5 text-2xl"><b>Featured Agencies</b></h2>
+      <p class="text-wrap">Explore properties from our partner agencies.</p>
+    </div>
+    <br />
+    <div class="flex justify-center gap-3 ml-5 mr-5">
+      <div class="box-content h-40 w-40 p-4 border-2 rounded-md">
+        <img
+          class="ml-5"
+          src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2F400-400%2Fagency%2F0ED332013E5D3E4-WhatsApp%20Image%202024-07-18%20at%2012.14.06_26a914c2.jpg&w=1920&q=75"
+          alt="nepalhome"
+          style="width: 120px"
+        />
+        <div class="ml-8">Sagun Home</div>
+        <button class="border-1 px-3 rounded-lg bg-gray-300 ml-4">
+          408 Properites
+        </button>
+      </div>
+      <div class="box-content h-40 w-40 p-4 border-2 rounded-md">
+        <img
+          class="ml-5"
+          src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2F400-400%2Fagency%2F0ED332013E5D3E4-WhatsApp%20Image%202024-07-18%20at%2012.14.06_26a914c2.jpg&w=1920&q=75"
+          alt="nepalhome"
+          style="width: 120px"
+        />
+        <div class="ml-8">Sagun Home</div>
+        <button class="border-1 px-3 rounded-lg bg-gray-300 ml-4">
+          408 Properites
+        </button>
+      </div>
+      <div class="box-content h-40 w-40 p-4 border-2 rounded-md">
+        <img
+          class="ml-5"
+          src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2F400-400%2Fagency%2F0ED332013E5D3E4-WhatsApp%20Image%202024-07-18%20at%2012.14.06_26a914c2.jpg&w=1920&q=75"
+          alt="nepalhome"
+          style="width: 120px"
+        />
+        <div class="ml-8">Sagun Home</div>
+        <button class="border-1 px-3 rounded-lg bg-gray-300 ml-4">
+          408 Properites
+        </button>
+      </div>
+      <div class="box-content h-40 w-40 p-4 border-2 rounded-md">
+        <img
+          class="ml-5"
+          src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2F400-400%2Fagency%2F0ED332013E5D3E4-WhatsApp%20Image%202024-07-18%20at%2012.14.06_26a914c2.jpg&w=1920&q=75"
+          alt="nepalhome"
+          style="width: 120px"
+        />
+        <div class="ml-8">Sagun Home</div>
+        <button class="border-1 px-3 rounded-lg bg-gray-300 ml-4">
+          408 Properites
+        </button>
+      </div>
+      <div class="box-content h-40 w-40 p-4 border-2 rounded-md">
+        <img
+          class="ml-5"
+          src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2F400-400%2Fagency%2F0ED332013E5D3E4-WhatsApp%20Image%202024-07-18%20at%2012.14.06_26a914c2.jpg&w=1920&q=75"
+          alt="nepalhome"
+          style="width: 120px"
+        />
+        <div class="ml-8">Sagun Home</div>
+        <button class="border-1 px-3 rounded-lg bg-gray-300 ml-4">
+          408 Properites
+        </button>
+      </div>
+      <div class="box-content h-40 w-40 p-4 border-2 rounded-md">
+        <img
+          class="ml-5"
+          src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2F400-400%2Fagency%2F0ED332013E5D3E4-WhatsApp%20Image%202024-07-18%20at%2012.14.06_26a914c2.jpg&w=1920&q=75"
+          alt="nepalhome"
+          style="width: 120px"
+        />
+        <div class="ml-8">Sagun Home</div>
+        <button class="border-1 px-3 rounded-lg bg-gray-300 ml-4">
+          408 Properites
+        </button>
+      </div>
+    </div>
+
+    <div class="ml-10 text-2xl"><b>Useful Collection</b></div>
+    <div class="ml-10">List it on Nepalhomes and get genuine leads.</div>
+    <br />
+    <div class="flex gap-6 justify-center">
+      <div class="box-content h-64 w-96 border- rounded-md">
+        <img
+          src="https://www.nepalhomes.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcollection1.57c8ae06.png&w=640&q=75"
+          alt=""
+          style="width: 100%"
+        />
+      </div>
+      <div class="box-content h-64 w-96 border- rounded-md">
+        <img
+          src="https://www.nepalhomes.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcollection2.c7bc1646.png&w=640&q=75"
+          alt=""
+          style="width: 100%"
+        />
+      </div>
+      <div class="box-content h-64 w-96 border rounded-md">
+        <img
+          class="h-66"
+          src="https://www.nepalhomes.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcollection3.cb1b671d.png&w=640&q=75"
+          alt=""
+          style="width: 100%"
+        />
+      </div>
+    </div>
+    <br /><br /><br />
+    <div class="text-center text-3xl"><b>News & Articles</b></div>
+    <br />
+    <div class="flex justify-center gap-5 ml-5 mr-5">
+      <div class="box-content h-72 w-80 border- rounded-md">
+        <img
+          src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2Fblog%2F800A9199846729D-EACAA4C5D5B8FBB-1B0734DB214655E-D8CAB548150DB82-FE406F736A21166-84285D2102DF516-KTM%20Mahanagar%20final.jpg&w=640&q=75"
+          alt=""
+          style="width: 100%; height: 70%"
+        /><br />
+        <div>
+          <b
+            >एक वर्षमा पौने चार अर्ब घरबहाल कर उठाउने काठमाडौं महानगरको
+            लक्ष्य</b
+          >
+        </div>
+        <div><b>1 DAY AGO</b></div>
+      </div>
+      <div class="box-content h-72 w-80 border- rounded-md">
+        <img
+          src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2Fblog%2F725E5B430F1A8F1-EB70CA457572794-photo.jpg&w=640&q=75"
+          alt=""
+          style="width: 100%; height: 67%"
+        /><br />
+        <div>
+          <b
+            >बैंकबाट कर्जा लिने र तिर्ने ऋणी बढ्दै, घरजग्गा रोक्का र फुकुवा
+            वृद्धि</b
+          >
+        </div>
+        <div><b>1 DAY AGO</b></div>
+      </div>
+      <div class="box-content h-60 w-80 border- rounded-md">
+        <img
+          class="h-70px"
+          src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2Fblog%2FDA9B7B15E56D6CC-NRB_20210831161843.jpg&w=640&q=75"
+          alt=""
+          style="width: 100%; height: 80%"
+        /><br />
+        <div><b>‘मौद्रिक नीतिले रियल इस्टेटलाई सम्बोधन गरेन’</b></div>
+        <div><b>5 DAY AGO</b></div>
+      </div>
+      <div class="box-content h-72 w-80 border- rounded-md">
+        <img
+          src="https://www.nepalhomes.com/_next/image?url=https%3A%2F%2Fwww.nepalhomes.com%2Fpublic%2Fblog%2FFF143A59722399E-monetary-1024x683.jpg&w=640&q=75"
+          alt=""
+          style="width: 100%"
+        /><br />
+        <div>
+          <b
+            >राष्ट्र बैंकले व्यक्तिगत आवास कर्जाको सिमा बढाइ साढे दुई करोड
+            पुर्यायो</b
+          >
+        </div>
+        <div><b>7 DAY AGO</b></div>
+      </div>
+    </div>
+  </body>
+</html>
